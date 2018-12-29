@@ -1,0 +1,9 @@
+title: Zetkin API Documentation
+email: info@zetkin.org
+baseurl: ""
+url: ""
+github_username:  zetkin
+
+# Build settings
+exclude: [README.md, CNAME]
+markdown: kramdown

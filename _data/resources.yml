@@ -1,0 +1,1254 @@
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: ActionCollection
+  url: /orgs/{org_id}/actions
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: ActionItem
+  url: /orgs/{org_id}/actions/{action_id}
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: ActionParticipantCollection
+  url: /orgs/{org_id}/actions/{action_id}/participants
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PUT
+  name: ActionParticipantItem
+  url: /orgs/{org_id}/actions/{action_id}/participants/{person_id}
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: ActionItem
+  url: /orgs/{org_id}/actions/{action_id}
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: ActionReminderCollection
+  url: /orgs/{org_id}/actions/{action_id}/reminders
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: ActionResponseCollection
+  url: /orgs/{org_id}/actions/{action_id}/responses
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PUT
+  name: ActionResponseItem
+  url: /orgs/{org_id}/actions/{action_id}/responses/{person_id}
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: ActivityCollection
+  url: /orgs/{org_id}/activities
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: ActivityItem
+  url: /orgs/{org_id}/activities/{activity_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: AddressCollection
+  url: /orgs/{org_id}/addresses
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: AddressItem
+  url: /orgs/{org_id}/addresses/{addr_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: AddressHouseholdCollection
+  url: /orgs/{org_id}/addresses/{addr_id}/households
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: AddressItem
+  url: /orgs/{org_id}/addresses/{addr_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: AddressItem
+  url: /orgs/{org_id}/addresses/{addr_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  name: AddressLocationTagCollection
+  url: /orgs/{org_id}/addresses/{addr_id}/tags
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: PUT
+  name: AddressLocationTagItem
+  url: /orgs/{org_id}/addresses/{addr_id}/tags/{tag_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: AssignedRouteCollection
+  url: /orgs/{org_id}/assigned_routes
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: AssignedRouteItem
+  url: /orgs/{org_id}/assigned_routes/{route_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: AssignedRouteHouseholdVisitCollection
+  url: /orgs/{org_id}/assigned_routes/{route_id}/household_visits
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  name: AssignedRouteStatsItem
+  url: /orgs/{org_id}/assigned_routes/{route_id}/stats
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: CallCollection
+  url: /orgs/{org_id}/calls
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CallItem
+  url: /orgs/{org_id}/calls/{call_id}
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: OrgItem
+  url: /orgs/{org_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: CallAssignmentCollection
+  url: /orgs/{org_id}/call_assignments
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CallAssignmentItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: CallAssignmentCallCollection
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/calls
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CallAssignmentItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: CallAssignmentCallerCollection
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/callers
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PUT
+  name: CallAssignmentCallerItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/callers/{caller_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CallAssignmentItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PUT
+  name: CallAssignmentCallerItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/callers/{caller_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: CallAssignmentCallerItemExclTagCollection
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/callers/{caller_id}/excluded_tags
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: PUT
+  name: CallAssignmentCallerItemExclTagItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/callers/{caller_id}/excluded_tags/{tag_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: CallAssignmentCallerItemPrioTagCollection
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/callers/{caller_id}/prioritized_tags
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: PUT
+  name: CallAssignmentCallerItemPrioTagItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/callers/{caller_id}/prioritized_tags/{tag_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CallAssignmentItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: "\n        This is really just a reflection of the callers that are assigned\
+      \ to\n        this CallAssignment, replacing those which have no individual\
+      \ config\n        (excluded or prioritized tags) in favor of a default queue.\
+      \ The main\n        reason for this endpoint is to provide links to the queue\
+      \ items.\n        "
+    method: GET
+  name: CallAssignmentQueueCollection
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/queues
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: CallAssignmentQueueItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/queues/{queue_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: POST
+  name: CallAssignmentUserQueueHead
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/queue/head
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: CallAssignmentStatsItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/stats
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CallAssignmentItem
+  url: /orgs/{org_id}/call_assignments/{assignment_id}
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: CallAssignmentTargetCollection
+  url: /orgs/{org_id}/call_assignments/{assignment_id}/targets
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: CampaignCollection
+  url: /orgs/{org_id}/campaigns
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CampaignItem
+  url: /orgs/{org_id}/campaigns/{campaign_id}
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: CampaignActionCollection
+  url: /orgs/{org_id}/campaigns/{campaign_id}/actions
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: CampaignActivityCollection
+  url: /orgs/{org_id}/campaigns/{campaign_id}/activities
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: CampaignLocationCollection
+  url: /orgs/{org_id}/campaigns/{campaign_id}/locations
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: CanvassAssignmentCollection
+  url: /orgs/{org_id}/canvass_assignments
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CanvassAssignmentItem
+  url: /orgs/{org_id}/canvass_assignments/{assignment_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  name: CanvassAssignmentCanvassRouteCollection
+  url: /orgs/{org_id}/canvass_assignments/{assignment_id}/routes
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: PUT
+  name: CanvassAssignmentCanvassRouteItem
+  url: /orgs/{org_id}/canvass_assignments/{assignment_id}/routes/{route_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CanvassAssignmentItem
+  url: /orgs/{org_id}/canvass_assignments/{assignment_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: CanvassRouteCollection
+  url: /orgs/{org_id}/canvass_routes
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: CanvassRouteItem
+  url: /orgs/{org_id}/canvass_routes/{route_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  name: CanvassRouteAddressCollection
+  url: /orgs/{org_id}/canvass_routes/{route_id}/addresses
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: PUT
+  name: CanvassRouteAddressItem
+  url: /orgs/{org_id}/canvass_routes/{route_id}/addresses/{addr_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  name: HouseholdCollection
+  url: /orgs/{org_id}/households
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: HouseholdItem
+  url: /orgs/{org_id}/households/{household_id}
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  name: HouseholdVisitCollection
+  url: /orgs/{org_id}/household_visits
+- doc: null
+  docsection: canvas
+  methods:
+  - doc: null
+    method: GET
+  name: HouseholdVisitItem
+  url: /orgs/{org_id}/household_visits/{visit_id}
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: InviteCollection
+  url: /orgs/{org_id}/invites
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  name: InviteItem
+  url: /orgs/{org_id}/invites/{invite_id}
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: JoinRequestCollection
+  url: /orgs/{org_id}/join_requests
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: LocationCollection
+  url: /orgs/{org_id}/locations
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: LocationItem
+  url: /orgs/{org_id}/locations/{loc_id}
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: GET
+  name: LocationActionCollection
+  url: /orgs/{org_id}/locations/{loc_id}/actions
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: GET
+  name: LocationActivityCollection
+  url: /orgs/{org_id}/locations/{loc_id}/activities
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: LocationItem
+  url: /orgs/{org_id}/locations/{loc_id}
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: GET
+  name: LocationLocationTagCollection
+  url: /orgs/{org_id}/locations/{loc_id}/tags
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: PUT
+  name: LocationLocationTagItem
+  url: /orgs/{org_id}/locations/{loc_id}/tags/{tag_id}
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: LocationTagCollection
+  url: /orgs/{org_id}/locations/tags
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: LocationTagItem
+  url: /orgs/{org_id}/locations/tags/{tag_id}
+- doc: null
+  docsection: maps
+  methods:
+  - doc: null
+    method: GET
+  name: LocationTagLocationCollection
+  url: /orgs/{org_id}/locations/tags/{tag_id}/locations
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: POST
+  name: MergeCollection
+  url: /orgs/{org_id}/merges
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  name: OfficialCollection
+  url: /orgs/{org_id}/officials
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PUT
+  name: OfficialItem
+  url: /orgs/{org_id}/officials/{person_id}
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: OrgCollection
+  url: /orgs
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: OrgItem
+  url: /orgs/{org_id}
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  name: OrganizationAvatar
+  url: /orgs/{org_id}/avatar
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: POST
+  name: PasswordTokenCollection
+  url: /password_reset_tokens
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: PersonCollection
+  url: /orgs/{org_id}/people
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonItem
+  url: /orgs/{org_id}/people/{person_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  name: PersonAvatar
+  url: /orgs/{org_id}/people/{person_id}/avatar
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  name: PersonPersonTagCollection
+  url: /orgs/{org_id}/people/{person_id}/tags
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: PUT
+  name: PersonPersonTagItem
+  url: /orgs/{org_id}/people/{person_id}/tags/{tag_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  name: PersonTimelineItem
+  url: /orgs/{org_id}/people/{person_id}/timeline
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: PersonGroupCollection
+  url: /orgs/{org_id}/groups
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonGroupItem
+  url: /orgs/{org_id}/groups/{group_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonGroupItem
+  url: /orgs/{org_id}/groups/{group_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  name: PersonGroupManagerCollection
+  url: /orgs/{org_id}/groups/{group_id}/managers
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonGroupItem
+  url: /orgs/{org_id}/groups/{group_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  name: PersonGroupMemberCollection
+  url: /orgs/{org_id}/groups/{group_id}/members
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: PATCH
+  - doc: null
+    method: PUT
+  name: PersonGroupMemberItem
+  url: /orgs/{org_id}/groups/{group_id}/members/{person_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: PersonGroupCategoryCollection
+  url: /orgs/{org_id}/group_categories
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonGroupCategoryItem
+  url: /orgs/{org_id}/group_categories/{cat_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: POST
+  name: PersonImportCollection
+  url: /orgs/{org_id}/imports
+- doc: null
+  docsection: search
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: PersonQueryCollection
+  url: /orgs/{org_id}/people/queries
+- doc: null
+  docsection: search
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonQueryItem
+  url: /orgs/{org_id}/people/queries/{query_id}
+- doc: null
+  docsection: search
+  methods:
+  - doc: null
+    method: GET
+  name: PersonQueryMatchCollection
+  url: /orgs/{org_id}/people/queries/{query_id}/matches
+- doc: null
+  docsection: search
+  methods:
+  - doc: null
+    method: GET
+  name: PersonQueryMatchItem
+  url: /orgs/{org_id}/people/queries/{query_id}/matches/{person_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: PersonTagCollection
+  url: /orgs/{org_id}/people/tags
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonTagItem
+  url: /orgs/{org_id}/people/tags/{tag_id}
+- doc: null
+  docsection: persons
+  methods:
+  - doc: null
+    method: GET
+  name: PersonTagPersonCollection
+  url: /orgs/{org_id}/people/tags/{tag_id}/people
+- doc: null
+  docsection: search
+  methods:
+  - doc: null
+    method: POST
+  name: SearchItem
+  url: /orgs/{org_id}/search/{data_type}
+- doc: ' Handle the /auth/session uri.  '
+  docsection: users
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  name: SessionItem
+  url: /session
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: SurveyCollection
+  url: /orgs/{org_id}/surveys
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveyItem
+  url: /orgs/{org_id}/surveys/{survey_id}
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveyElementOrderItem
+  url: /orgs/{org_id}/surveys/{survey_id}/element_order
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveyItem
+  url: /orgs/{org_id}/surveys/{survey_id}
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveyItem
+  url: /orgs/{org_id}/surveys/{survey_id}
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: SurveySurveyElementCollection
+  url: /orgs/{org_id}/surveys/{survey_id}/elements
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveySurveyElementItem
+  url: /orgs/{org_id}/surveys/{survey_id}/elements/{elem_id}
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveySurveyElementItem
+  url: /orgs/{org_id}/surveys/{survey_id}/elements/{elem_id}
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: SurveySurveyElementOptionCollection
+  url: /orgs/{org_id}/surveys/{survey_id}/elements/{elem_id}/options
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveySurveyElementOptionItem
+  url: /orgs/{org_id}/surveys/{survey_id}/elements/{elem_id}/options/{opt_id}
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveySurveyElementItem
+  url: /orgs/{org_id}/surveys/{survey_id}/elements/{elem_id}
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveySurveyElementOptionOrderItem
+  url: /orgs/{org_id}/surveys/{survey_id}/elements/{elem_id}/option_order
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: SurveySurveySubmissionCollection
+  url: /orgs/{org_id}/surveys/{survey_id}/submissions
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: GET
+  name: SurveySubmissionCollection
+  url: /orgs/{org_id}/survey_submissions
+- doc: null
+  docsection: survey
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: SurveySubmissionItem
+  url: /orgs/{org_id}/survey_submissions/{sub_id}
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: UserCollection
+  url: /users
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: UserItem
+  url: /users/{user_id}
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: UserActionCollection
+  url: /users/{user_id}/actions
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: UserActionResponseCollection
+  url: /users/{user_id}/action_responses
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: GET
+  name: UserAvatar
+  url: /users/{user_id}/avatar
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: UserCallCollection
+  url: /users/{user_id}/outgoing_calls
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: CallAssignmentCollection
+  url: /orgs/{org_id}/call_assignments
+- doc: null
+  docsection: call
+  methods:
+  - doc: null
+    method: GET
+  name: UserCallAssignmentCollection
+  url: /users/{user_id}/call_assignments
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  name: UserInviteCollection
+  url: /users/{user_id}/invites
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: UserItem
+  url: /users/{user_id}
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  name: UserMembershipCollection
+  url: /users/{user_id}/memberships
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  name: UserMembershipItem
+  url: /users/{user_id}/memberships/{org_id}
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: UserItem
+  url: /users/{user_id}
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: POST
+  name: UserPasswordItem
+  url: /users/{user_id}/password
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  name: UserProfileCollection
+  url: /users/{user_id}/profiles
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  name: UserRecommendedOrganizationCollection
+  url: /users/{user_id}/recommended_organizations
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: UserItem
+  url: /users/{user_id}
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: POST
+  name: UserVerificationCodeCollection
+  url: /users/{user_id}/verification_codes
+- doc: null
+  docsection: users
+  methods:
+  - doc: null
+    method: PUT
+  name: UserVerificationCodeItem
+  url: /users/{user_id}/verification_codes/{code}
