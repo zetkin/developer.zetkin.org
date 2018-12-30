@@ -1,9 +1,9 @@
 <ul>
 {% assign sections = site.data.resources | map: "docsection" | uniq %}
-	<li><a href="/">Home</a></li>
+    <li><a href="/">Home</a></li>
 {% for section in sections %}
-	{% if section %}
-		<li><a href="/api/{{ section }}">{{ site.data.sectionnames[section] }}</a></li>
-	{% endif %}
+    {% if section %}
+        <li><a href="/api/{{ section }}">{{ site.data.sectionnames[section] }}</a></li>
+    {% endif %}
 {% endfor %}
 </ul>

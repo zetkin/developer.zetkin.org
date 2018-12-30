@@ -3,28 +3,28 @@ title: Home
 ---
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-	<link rel="stylesheet" href="/assets/css/styles.css"/>
-  </head>
-  <body>
-  	<div class="menu">
-		{% include menu.html %}
-	</div>
-	<div class="content">
-		<div>The API for {{ page.title }}</div>
-		{{ content }}
-		{% for class in site.data.resources	%}
-			{% if class.docsection and class.docsection == page.docsection %}
-				<div>{{ class.name }}</div>
-				<div>{{ class.doc }}</div>
-					{% for method in class.methods %}
-						<div>{{ method.method }}</div>
-						<div>{{ method.doc }}</div>
-					{% endfor %}
-			{% endif %}
-		{% endfor %}
-	</div>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css"/>
+    </head>
+    <body>
+        <div class="menu">
+            {% include menu.html %}
+        </div>
+        <div class="content">
+            <div>The API for {{ page.title }}</div>
+            {{ content }}
+            {% for class in site.data.resources %}
+                {% if class.docsection and class.docsection == page.docsection %}
+                    <div>{{ class.name }}</div>
+                    <div>{{ class.doc }}</div>
+                        {% for method in class.methods %}
+                            <div>{{ method.method }}</div>
+                            <div>{{ method.doc }}</div>
+                        {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </body>
 </html>
