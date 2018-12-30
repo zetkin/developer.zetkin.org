@@ -21,12 +21,13 @@ title: Home
                 {% assign resources = site.data.resources | where:"docsection",page.docsection %}
                 {% for res in resources %}
                 <article class="api-resource">
-                    <h2>{{ res.url }}</h2>
-                    <div>{{ res.doc }}</div>
+                    {% assign path_segments = res.url | split:"/" %}
+                    <h2>{% for seg in path_segments %}{% if seg contains '{' %}<var>{{ seg }}</var>{% else %}{{ seg }}{% endif %}{% if seg != path_segments.last %}/{% endif %}{% endfor %}</h2>
+                    <div>{{ res.doc | markdownify }}</div>
                     {% for method in res.methods %}
                         <section class="api-method">
                             <h3>{{ method.method }}</h3>
-                            <div>{{ method.doc }}</div>
+                            <div>{{ method.doc | markdownify}}</div>
                         </section>
                     {% endfor %}
                 </article>
