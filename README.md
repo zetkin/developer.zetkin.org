@@ -11,4 +11,4 @@ $ docker run --rm -ti -v $PWD:/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serv
 If you prefer not to use Docker, you'll need to go to https://jekyllrb.com/ and follow the installation guidlines and step-by-step tutorial.
 
 ## Site structure
-In _data/resources.yml the data for the API is found. This file is generated with a script that is run in the zetkin/core project. 
+In _data/resources.yml the data for the API is found. This file can be generated with a script by Zetkin Platform developers.
