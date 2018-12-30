@@ -13,18 +13,26 @@ title: Home
             {% include menu.html %}
         </div>
         <div class="content">
-            <div>The API for {{ page.title }}</div>
-            {{ content }}
-            {% for class in site.data.resources %}
-                {% if class.docsection and class.docsection == page.docsection %}
-                    <div>{{ class.name }}</div>
-                    <div>{{ class.doc }}</div>
-                        {% for method in class.methods %}
-                            <div>{{ method.method }}</div>
-                            <div>{{ method.doc }}</div>
-                        {% endfor %}
-                {% endif %}
-            {% endfor %}
+            <h1>{{ page.title }}</h1>
+            <article class="api-topic">
+                <section class="api-topic-section">
+                {{ content }}
+                </section>
+                {% assign resources = site.data.resources | where:"docsection",page.docsection %}
+                {% for res in resources %}
+                <article class="api-resource">
+                    {% assign path_segments = res.url | split:"/" %}
+                    <h2>{% for seg in path_segments %}{% if seg contains '{' %}<var>{{ seg }}</var>{% else %}{{ seg }}{% endif %}{% if seg != path_segments.last %}/{% endif %}{% endfor %}</h2>
+                    <div>{{ res.doc | markdownify }}</div>
+                    {% for method in res.methods %}
+                        <section class="api-method">
+                            <h3>{{ method.method }}</h3>
+                            <div>{{ method.doc | markdownify}}</div>
+                        </section>
+                    {% endfor %}
+                </article>
+                {% endfor %}
+            </article>
         </div>
     </body>
 </html>
