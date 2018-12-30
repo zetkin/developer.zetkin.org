@@ -1,11 +1,26 @@
-.menu{
+@import "variables";
+@import "base";
+
+.menu {
     margin-top: 70px;
     float: left;
     width: 30%;
     margin-right: 5%;
 }
 
-.content{
+.content {
     float: left;
     width: 65%;
-} 
+}
+
+.api-resource {
+    margin-top: 3em;
+    padding: 0 0 3em;
+    border-bottom: 1px solid #eee;
+}
+
+.api-method {
+    h3 {
+        font-family: monospace;
+    }
+}
