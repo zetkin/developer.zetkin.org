@@ -14,9 +14,9 @@
             </div>
             <nav class="main-menu">
                 <ul>
-                    <li><a href="/platform">The Platform</a></li>
-                    <li><a href="/api">Reference</a></li>
-                    <li><a href="/contributing">Contributing</a></li>
+                    {% for section in site.data.nav %}
+                    <li><a href="{{ section.path }}">{{ section.text }}</a></li>
+                    {% endfor %}
                 </ul>
             </nav>
         </div>

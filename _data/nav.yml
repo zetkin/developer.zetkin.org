@@ -1,0 +1,35 @@
+- text: The Platform
+  path: /platform
+  children:
+    - text: Architecture
+      path: /platform/architecture
+    - text: Customizing Zetkin
+      path: /platform/customize
+- text: Reference
+  path: /reference
+  children:
+    - text: REST API
+      path: /reference/api
+      children:
+        - text: Campaign resources
+          path: /reference/api/campaign
+        - text: Canvassing
+          path: /reference/api/canvas
+        - text: Phone banking
+          path: /reference/api/call
+        - text: Maps
+          path: /reference/api/maps
+        - text: Organizations
+          path: /reference/api/organizations
+        - text: Resources for managing persons
+          path: /reference/api/persons
+        - text: Searching
+          path: /reference/api/search
+        - text: Surveys
+          path: /reference/api/survey
+        - text: Users, authorization and session management
+          path: /reference/api/users
+    - text: SDK
+      path: /reference/sdk
+- text: Contributing
+  path: /contributing

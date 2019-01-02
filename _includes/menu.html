@@ -1,9 +1,13 @@
+{% if include.items %}
 <ul>
-{% assign sections = site.data.resources | map: "docsection" | uniq %}
-    <li><a href="/">Home</a></li>
-{% for section in sections %}
-    {% if section %}
-        <li><a href="/api/{{ section }}">{{ site.data.sectionnames[section] }}</a></li>
-    {% endif %}
+{% for item in include.items %}
+    {% capture itemPathWithSlash %}{{ item.path }}/{% endcapture %}
+    <li>
+        <a href="{{ item.path }}">{{ item.text }}</a>
+        {% if page.url contains itemPathWithSlash %}
+        {% include menu.html items=item.children %}
+        {% endif %}
+    </li>
 {% endfor %}
 </ul>
+{% endif %}

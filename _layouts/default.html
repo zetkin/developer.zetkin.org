@@ -1,5 +1,15 @@
 ---
 layout: base
 ---
-            <h1>{{ page.title }}</h1>
-            {{ content }}
+<nav class="sidebar">
+{% for section in site.data.nav %}
+{% capture pathWithSlash %}{{ section.path }}/{% endcapture %}
+{% if page.url contains pathWithSlash %}
+    {% include menu.html items=section.children %}
+{% endif %}
+{% endfor %}
+</nav>
+<div class="content">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+</div>
