@@ -1,6 +1,6 @@
 ---
 docsection: campaign
-layout: default
+layout: api_section
 title: "Campaign resources"
 ---
 

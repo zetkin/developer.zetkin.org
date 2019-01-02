@@ -1,6 +1,6 @@
 ---
 docsection: organizations
-layout: default
+layout: api_section
 title: "Organizations"
 ---
 

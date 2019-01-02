@@ -1,6 +1,6 @@
 ---
 docsection: survey
-layout: default
+layout: api_section
 title: "Surveys"
 ---
 

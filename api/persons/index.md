@@ -1,6 +1,6 @@
 ---
 docsection: persons
-layout: default
+layout: api_section
 title: "Resources for managing persons"
 ---
 
