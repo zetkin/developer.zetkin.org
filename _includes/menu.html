@@ -2,9 +2,14 @@
 <ul>
 {% for item in include.items %}
     {% capture itemPathWithSlash %}{{ item.path }}/{% endcapture %}
+    {% assign selected = false %}
+    {% if page.url contains itemPathWithSlash %}
+        {% assign selected = true %}
+    {% endif %}
     <li>
-        <a href="{{ item.path }}">{{ item.text }}</a>
-        {% if page.url contains itemPathWithSlash %}
+        <a class="{% if selected %}selected{% endif %}"
+            href="{{ item.path }}">{{ item.text }}</a>
+        {% if selected %}
         {% include menu.html items=item.children %}
         {% endif %}
     </li>
