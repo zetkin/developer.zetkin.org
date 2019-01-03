@@ -1,6 +1,6 @@
 ---
 docsection: call
-layout: default
+layout: api_section
 title: "Phone banking"
 ---
 

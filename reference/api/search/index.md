@@ -1,6 +1,6 @@
 ---
 docsection: search
-layout: default
+layout: api_section
 title: "Searching"
 ---
 

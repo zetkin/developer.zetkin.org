@@ -1,6 +1,6 @@
 ---
 docsection: maps
-layout: default
+layout: api_section
 title: "Maps"
 ---
 

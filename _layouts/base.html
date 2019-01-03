@@ -1,0 +1,33 @@
+---
+---
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/assets/css/styles.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">
+                <a href="/">Zetkin developer portal</a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    {% for section in site.data.nav %}
+                    {% assign class = '' %}
+                    {% if page.url contains section.path %}
+                        {% assign class = 'selected' %}
+                    {% endif %}
+                    <li class="{{ class }}">
+                        <a href="{{ section.path }}">{{ section.text }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            {{ content }}
+        </div>
+    </body>
+</html>

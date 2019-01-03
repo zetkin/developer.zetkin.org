@@ -1,6 +1,6 @@
 ---
 docsection: canvas
-layout: default
+layout: api_section
 title: "Canvassing"
 ---
 

@@ -1,38 +1,4 @@
 @import "variables";
 @import "base";
-
-.menu {
-    margin-top: 70px;
-    float: left;
-    width: 30%;
-    margin-right: 5%;
-}
-
-.content {
-    float: left;
-    width: 65%;
-}
-
-.api-resource {
-    margin-top: 3em;
-    padding: 0 0 3em;
-    border-bottom: 1px solid #eee;
-
-    h2 {
-        var {
-            font-style: normal;
-            font-family: monospace;
-            display: inline-block;
-            color: $c-brand-comp-dark;
-        }
-    }
-}
-
-.api-method {
-    h3 {
-        font-family: monospace;
-        display: inline-block;
-        background-color: lighten($c-brand-comp-light, 30);
-        padding: 0.1em 0.2em;
-    }
-}
+@import "layout";
+@import "api";
