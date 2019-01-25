@@ -14,15 +14,15 @@
         - text: Campaign resources
           path: /reference/api/campaign
         - text: Canvassing
-          path: /reference/api/canvas
+          path: /reference/api/canvass
         - text: Phone banking
           path: /reference/api/call
         - text: Maps
           path: /reference/api/maps
         - text: Organizations
           path: /reference/api/organizations
-        - text: Managing persons
-          path: /reference/api/persons
+        - text: Managing people
+          path: /reference/api/people
         - text: Searching
           path: /reference/api/search
         - text: Surveys
