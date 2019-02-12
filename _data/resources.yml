@@ -95,7 +95,7 @@
   name: ActivityItem
   url: /orgs/{org_id}/activities/{activity_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -104,7 +104,7 @@
   name: AddressCollection
   url: /orgs/{org_id}/addresses
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -115,7 +115,7 @@
   name: AddressItem
   url: /orgs/{org_id}/addresses/{addr_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -124,7 +124,7 @@
   name: AddressHouseholdCollection
   url: /orgs/{org_id}/addresses/{addr_id}/households
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -135,7 +135,7 @@
   name: AddressItem
   url: /orgs/{org_id}/addresses/{addr_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -146,14 +146,14 @@
   name: AddressItem
   url: /orgs/{org_id}/addresses/{addr_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
   name: AddressLocationTagCollection
   url: /orgs/{org_id}/addresses/{addr_id}/tags
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -162,7 +162,7 @@
   name: AddressLocationTagItem
   url: /orgs/{org_id}/addresses/{addr_id}/tags/{tag_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -171,7 +171,7 @@
   name: AssignedRouteCollection
   url: /orgs/{org_id}/assigned_routes
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -180,7 +180,7 @@
   name: AssignedRouteItem
   url: /orgs/{org_id}/assigned_routes/{route_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -189,7 +189,7 @@
   name: AssignedRouteHouseholdVisitCollection
   url: /orgs/{org_id}/assigned_routes/{route_id}/household_visits
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -441,7 +441,35 @@
   name: CampaignLocationCollection
   url: /orgs/{org_id}/campaigns/{campaign_id}/locations
 - doc: null
-  docsection: canvas
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: CampaignCollectionStatsParticipation
+  url: /orgs/{org_id}/campaigns/stats/participation
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: CampaignCollectionStatsParticipationByHour
+  url: /orgs/{org_id}/campaigns/stats/participation_by_hour
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: CampaignItemStatsParticipation
+  url: /orgs/{org_id}/campaigns/{campaign_id}/stats/participation
+- doc: null
+  docsection: campaign
+  methods:
+  - doc: null
+    method: GET
+  name: CampaignItemStatsParticipationByHour
+  url: /orgs/{org_id}/campaigns/{campaign_id}/stats/participation_by_hour
+- doc: null
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -450,7 +478,7 @@
   name: CanvassAssignmentCollection
   url: /orgs/{org_id}/canvass_assignments
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -461,14 +489,14 @@
   name: CanvassAssignmentItem
   url: /orgs/{org_id}/canvass_assignments/{assignment_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
   name: CanvassAssignmentCanvassRouteCollection
   url: /orgs/{org_id}/canvass_assignments/{assignment_id}/routes
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -477,7 +505,7 @@
   name: CanvassAssignmentCanvassRouteItem
   url: /orgs/{org_id}/canvass_assignments/{assignment_id}/routes/{route_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -488,7 +516,7 @@
   name: CanvassAssignmentItem
   url: /orgs/{org_id}/canvass_assignments/{assignment_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -497,7 +525,7 @@
   name: CanvassRouteCollection
   url: /orgs/{org_id}/canvass_routes
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -508,14 +536,14 @@
   name: CanvassRouteItem
   url: /orgs/{org_id}/canvass_routes/{route_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
   name: CanvassRouteAddressCollection
   url: /orgs/{org_id}/canvass_routes/{route_id}/addresses
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -524,14 +552,14 @@
   name: CanvassRouteAddressItem
   url: /orgs/{org_id}/canvass_routes/{route_id}/addresses/{addr_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
   name: HouseholdCollection
   url: /orgs/{org_id}/households
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: DELETE
@@ -542,14 +570,14 @@
   name: HouseholdItem
   url: /orgs/{org_id}/households/{household_id}
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
   name: HouseholdVisitCollection
   url: /orgs/{org_id}/household_visits
 - doc: null
-  docsection: canvas
+  docsection: canvass
   methods:
   - doc: null
     method: GET
@@ -671,7 +699,7 @@
   name: LocationTagLocationCollection
   url: /orgs/{org_id}/locations/tags/{tag_id}/locations
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: POST
@@ -730,7 +758,7 @@
   name: PasswordTokenCollection
   url: /password_reset_tokens
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
@@ -739,7 +767,7 @@
   name: PersonCollection
   url: /orgs/{org_id}/people
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: DELETE
@@ -750,21 +778,21 @@
   name: PersonItem
   url: /orgs/{org_id}/people/{person_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
   name: PersonAvatar
   url: /orgs/{org_id}/people/{person_id}/avatar
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
   name: PersonPersonTagCollection
   url: /orgs/{org_id}/people/{person_id}/tags
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: DELETE
@@ -773,14 +801,14 @@
   name: PersonPersonTagItem
   url: /orgs/{org_id}/people/{person_id}/tags/{tag_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
   name: PersonTimelineItem
   url: /orgs/{org_id}/people/{person_id}/timeline
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
@@ -789,7 +817,7 @@
   name: PersonGroupCollection
   url: /orgs/{org_id}/groups
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: DELETE
@@ -800,7 +828,7 @@
   name: PersonGroupItem
   url: /orgs/{org_id}/groups/{group_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: DELETE
@@ -811,14 +839,14 @@
   name: PersonGroupItem
   url: /orgs/{org_id}/groups/{group_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
   name: PersonGroupManagerCollection
   url: /orgs/{org_id}/groups/{group_id}/managers
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: DELETE
@@ -829,14 +857,14 @@
   name: PersonGroupItem
   url: /orgs/{org_id}/groups/{group_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
   name: PersonGroupMemberCollection
   url: /orgs/{org_id}/groups/{group_id}/members
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: DELETE
@@ -847,7 +875,7 @@
   name: PersonGroupMemberItem
   url: /orgs/{org_id}/groups/{group_id}/members/{person_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
@@ -856,7 +884,7 @@
   name: PersonGroupCategoryCollection
   url: /orgs/{org_id}/group_categories
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: DELETE
@@ -867,7 +895,7 @@
   name: PersonGroupCategoryItem
   url: /orgs/{org_id}/group_categories/{cat_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: POST
@@ -908,7 +936,7 @@
   name: PersonQueryMatchItem
   url: /orgs/{org_id}/people/queries/{query_id}/matches/{person_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
@@ -917,7 +945,7 @@
   name: PersonTagCollection
   url: /orgs/{org_id}/people/tags
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: DELETE
@@ -928,7 +956,7 @@
   name: PersonTagItem
   url: /orgs/{org_id}/people/tags/{tag_id}
 - doc: null
-  docsection: persons
+  docsection: people
   methods:
   - doc: null
     method: GET
