@@ -1,5 +1,5 @@
 ---
-docsection: canvas
+docsection: canvass
 layout: api_section
 title: "Canvassing"
 ---
