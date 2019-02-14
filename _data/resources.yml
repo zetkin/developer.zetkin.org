@@ -964,10 +964,34 @@
     method: GET
   name: PersonTagPersonCollection
   url: /orgs/{org_id}/people/tags/{tag_id}/people
-- doc: null
+- doc: 'The following datatypes are accepted as the parameter _data_type_:
+
+    - activity
+
+    - callassignment
+
+    - campaign
+
+    - location
+
+    - person
+
+    - personquery
+
+    - survey
+
+    - surveysubmission'
   docsection: search
   methods:
-  - doc: null
+  - doc: 'The query must be sent as request data on the form
+
+      ```json
+
+      { "q": "abc123" }
+
+      ```
+
+      where _abc123_ is the search string'
     method: POST
   name: SearchItem
   url: /orgs/{org_id}/search/{data_type}
