@@ -10,7 +10,7 @@ layout: default
     {% for res in resources %}
     <article class="api-resource">
         {% assign path_segments = res.url | split:"/" %}
-        <h2>{% for seg in path_segments %}{% if seg contains '{' %}<var>{{ seg }}</var>{% else %}{{ seg }}{% endif %}{% if seg != path_segments.last %}/{% endif %}{% endfor %}</h2>
+        <h2>{% for seg in path_segments %}{% if seg contains '{' %}<var>{{ seg }}</var>{% else %}{{ seg }}{% endif %}{% if forloop.rindex0 > 0 %}/{% endif %}{% endfor %}</h2>
         <div>{{ res.doc | markdownify }}</div>
         {% for method in res.methods %}
             <section class="api-method">

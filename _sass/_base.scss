@@ -1,8 +1,23 @@
 body {
     font-size: $base-font-size;
     font-family: $base-font-family;
+    line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
+}
+
+h2 {
+    margin-top: 3em;
+}
+
+h3 {
+    margin-top: 2em;
+}
+
+pre.highlight {
+    padding: 0.8em;
+    background-color: #f6f6f6;
+    line-height: 1.3em;
 }
