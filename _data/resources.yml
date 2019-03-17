@@ -916,7 +916,7 @@
   methods:
   - doc: '
 
-      Returns a list of objects (see below) containg the person query objecs, for the organization with the query type "standalone".
+      Returns a list of objects (see below) containg the person query objects, for the organization with the query type "standalone".
 
       '
     method: GET
@@ -976,7 +976,9 @@
     method: GET
   name: PersonTagPersonCollection
   url: /orgs/{org_id}/people/tags/{tag_id}/people
-- doc: 'following datatypes are accepted as the parameter _data_type_:
+- doc: '
+
+    The following datatypes are accepted as the parameter _data_type_:
 
     - activity
 
@@ -997,7 +999,9 @@
     '
   docsection: search
   methods:
-  - doc: 'y must be sent as request data on the form
+  - doc: '
+
+      The query must be sent as request data on the form
 
       ```json
 
