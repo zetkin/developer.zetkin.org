@@ -350,13 +350,17 @@
 - doc: null
   docsection: call
   methods:
-  - doc: 'This is really just a reflection of the callers that are assigned to
+  - doc: '
+
+      This is really just a reflection of the callers that are assigned to
 
       this CallAssignment, replacing those which have no individual config
 
       (excluded or prioritized tags) in favor of a default queue. The main
 
-      reason for this endpoint is to provide links to the queue items.'
+      reason for this endpoint is to provide links to the queue items.
+
+      '
     method: GET
   name: CallAssignmentQueueCollection
   url: /orgs/{org_id}/call_assignments/{assignment_id}/queues
@@ -903,10 +907,18 @@
     method: POST
   name: PersonImportCollection
   url: /orgs/{org_id}/imports
-- doc: null
+- doc: '
+
+    The resource endpoint for the smart searches referenced above.
+
+    '
   docsection: search
   methods:
-  - doc: null
+  - doc: '
+
+      Returns a list of objects (see below) containg the person query objects, for the organization with the query type "standalone".
+
+      '
     method: GET
   - doc: null
     method: POST
@@ -917,7 +929,7 @@
   methods:
   - doc: null
     method: DELETE
-  - doc: null
+  - doc: "\nReturns a person query item.\n\nThe query item is an object that consists of an _id_, _type_, _title_, _info_text_ and _filter_spec_. The title is always \"standalone\".\n\nThe filter_spec consists of an array of filters that are described [here](/reference/api/smartsearches/).\n\nExample:\n```json\n{\n    \"id\": \"1\",\n    \"type\" : \"standalone\"\n    \"title\": \"example\"\n    \"info_text\": \"some info text\"\n    \"filter_spec\":\n    [{\n        \"op\": \"add\"\n        \"type\": \"person_data\",\n        \"config\": {\n            \"fields\": {\n                \"first_name\": \"Clara\",\n                \"last_name\": \"Zetkin\"\n            }\n        }\n    },\n    {\n        \"op\": \"add\"\n        \"type\": \"person_tags\",\n        \"config\": {\n            \"condition\": \"none\",\n            \"tags\": [1, 2, 3]\n        }\n    }]\n}\n```\n"
     method: GET
   - doc: null
     method: PATCH
@@ -964,7 +976,9 @@
     method: GET
   name: PersonTagPersonCollection
   url: /orgs/{org_id}/people/tags/{tag_id}/people
-- doc: 'The following datatypes are accepted as the parameter _data_type_:
+- doc: '
+
+    The following datatypes are accepted as the parameter _data_type_:
 
     - activity
 
@@ -980,10 +994,14 @@
 
     - survey
 
-    - surveysubmission'
+    - surveysubmission
+
+    '
   docsection: search
   methods:
-  - doc: 'The query must be sent as request data on the form
+  - doc: '
+
+      The query must be sent as request data on the form
 
       ```json
 
@@ -991,11 +1009,13 @@
 
       ```
 
-      where _abc123_ is the search string'
+      where _abc123_ is the search string
+
+      '
     method: POST
   name: SearchItem
   url: /orgs/{org_id}/search/{data_type}
-- doc: Handle the /auth/session uri.
+- doc: ' Handle the /auth/session uri.  '
   docsection: users
   methods:
   - doc: null
