@@ -790,6 +790,74 @@
     method: GET
   name: PersonAvatar
   url: /orgs/{org_id}/people/{person_id}/avatar
+- doc: '
+
+    Values for custom fields on this person.
+
+    '
+  docsection: people
+  methods:
+  - doc: '
+
+      Get values for all fields that have been set on this person.
+
+      '
+    method: GET
+  name: PersonFieldValueCollection
+  url: /orgs/{org_id}/people/{person_id}/fields
+- doc: '
+
+    Get/set custom field values for this person.
+
+    '
+  docsection: people
+  methods:
+  - doc: '
+
+      Delete (unset) the value of field `field_id` (ID or slug) for this person.
+
+
+      Trying to delete a value for a field which has not been set will return a
+
+      404 (Not found) error code.
+
+
+      As an alternative, you can `PUT` an empty value which will also cause the
+
+      field to be unset, but always returns 204 (No Content).
+
+      '
+    method: DELETE
+  - doc: '
+
+      Get value of field `field_id` (ID or slug) for this person. The value
+
+      is returned as the `data` property of the response, or null if no value
+
+      has been set.
+
+      '
+    method: GET
+  - doc: '
+
+      Set or update the value of field `field_id` (ID or slug) for this person.
+
+
+      The request body will be parsed as JSON and assigned to the field. This
+
+      means that the content can be anything allowed in JSON, including objects
+
+      and lists (if the type of the field is `json`).
+
+
+      A null/empty value will unset the field for this person. This is similar
+
+      to `DELETE`, but will not return 404 if the value is not already set.
+
+      '
+    method: PUT
+  name: PersonFieldValueItem
+  url: /orgs/{org_id}/people/{person_id}/fields/{field_id}
 - doc: null
   docsection: people
   methods:
@@ -813,6 +881,56 @@
     method: GET
   name: PersonTimelineItem
   url: /orgs/{org_id}/people/{person_id}/timeline
+- doc: '
+
+    Custom fields that can be assigned to Person objects.
+
+    '
+  docsection: people
+  methods:
+  - doc: '
+
+      Returns a list of existing custom field configurations.
+
+      '
+    method: GET
+  - doc: '
+
+      Creates a new custom field, for which values can then be set per person.
+
+      '
+    method: POST
+  name: PersonFieldCollection
+  url: /orgs/{org_id}/people/fields
+- doc: '
+
+    Custom field that can be assigned values to Person objects.
+
+    '
+  docsection: people
+  methods:
+  - doc: '
+
+      Delete a custom field. This will also make inaccessible all values
+
+      assigned to this field on Person objects.
+
+      '
+    method: DELETE
+  - doc: '
+
+      Returns a single custom field configuration.
+
+      '
+    method: GET
+  - doc: '
+
+      Update field configuration.
+
+      '
+    method: PATCH
+  name: PersonFieldItem
+  url: /orgs/{org_id}/people/fields/{field_id}
 - doc: null
   docsection: people
   methods:
@@ -904,6 +1022,8 @@
   docsection: people
   methods:
   - doc: null
+    method: GET
+  - doc: null
     method: POST
   name: PersonImportCollection
   url: /orgs/{org_id}/imports
@@ -916,7 +1036,7 @@
   methods:
   - doc: '
 
-      Returns a list of objects (see below) containg the person query objects, for the organization with the query type "standalone".
+      Returns a list of objects (see below) containing the person query objects, for the organization with the query type "standalone".
 
       '
     method: GET
@@ -929,7 +1049,7 @@
   methods:
   - doc: null
     method: DELETE
-  - doc: "\nReturns a person query item.\n\nThe query item is an object that consists of an _id_, _type_, _title_, _info_text_ and _filter_spec_. The title is always \"standalone\".\n\nThe filter_spec consists of an array of filters that are described [here](/reference/api/smartsearches/).\n\nExample:\n```json\n{\n    \"id\": \"1\",\n    \"type\" : \"standalone\"\n    \"title\": \"example\"\n    \"info_text\": \"some info text\"\n    \"filter_spec\":\n    [{\n        \"op\": \"add\"\n        \"type\": \"person_data\",\n        \"config\": {\n            \"fields\": {\n                \"first_name\": \"Clara\",\n                \"last_name\": \"Zetkin\"\n            }\n        }\n    },\n    {\n        \"op\": \"add\"\n        \"type\": \"person_tags\",\n        \"config\": {\n            \"condition\": \"none\",\n            \"tags\": [1, 2, 3]\n        }\n    }]\n}\n```\n"
+  - doc: "\nReturns a person query item.\n\nThe query item is an object that consists of an _id_, _type_, _title_, _info_text_ and _filter_spec_. The type is always \"standalone\" (when retrieved from this endpoint).\n\nThe filter_spec consists of an array of filters that are described [here](/reference/api/smartsearches/).\n\nExample:\n```json\n{\n    \"id\": \"1\",\n    \"type\" : \"standalone\"\n    \"title\": \"example\"\n    \"info_text\": \"some info text\"\n    \"filter_spec\":\n    [{\n        \"op\": \"add\"\n        \"type\": \"person_data\",\n        \"config\": {\n            \"fields\": {\n                \"first_name\": \"Clara\",\n                \"last_name\": \"Zetkin\"\n            }\n        }\n    },\n    {\n        \"op\": \"add\"\n        \"type\": \"person_tags\",\n        \"config\": {\n            \"condition\": \"none\",\n            \"tags\": [1, 2, 3]\n        }\n    }]\n}\n```\n"
     method: GET
   - doc: null
     method: PATCH
@@ -976,6 +1096,17 @@
     method: GET
   name: PersonTagPersonCollection
   url: /orgs/{org_id}/people/tags/{tag_id}/people
+- doc: '
+
+    Search for data globally (access limited).
+
+    '
+  docsection: search
+  methods:
+  - doc: null
+    method: POST
+  name: GlobalSearchItem
+  url: /search/{data_type}
 - doc: '
 
     The following datatypes are accepted as the parameter _data_type_:
