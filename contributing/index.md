@@ -6,7 +6,11 @@ layout: default
 Zetkin is a big collaboration. This guide is for **your very first hour** of
 learning about it. Welcome!
 
+This is a big document.
+
 ## Getting started
+
+If you are a programmer, user interface designer, user experience designer, or have some other technical competence, you are welcome to contribute to the Zetkin project which would benefit all attached organizations.
 
 Do you want to start contributing right now?
 
@@ -34,17 +38,21 @@ software to support Docker. [Docker documentation: Install Docker Desktop on Win
 
 ### Clone a project
 
-Zetkin has three large projects you can access right now:
+Zetkin has three large projects you can access on [the Zetkin GitHub Organization](https://github.com/zetkin) right now:
 
-- [www](https://github.com/zetkin/www.zetk.in#getting-started)
-- [call](https://github.com/zetkin/call.zetk.in#getting-started)
-- [organize](https://github.com/zetkin/organize.zetk.in#getting-started)
+- [www](https://github.com/zetkin/www.zetk.in#getting-started) - the activist-facing website
+- [call](https://github.com/zetkin/call.zetk.in#getting-started) - a phone banking system
+- [organize](https://github.com/zetkin/organize.zetk.in#getting-started) - the organizer tool
 
 ### Find a task!
 
-Zetkin has many already-described tasks to go work on, and we labeled some of
+Zetkin has many already-described tasks to go work on, in GitHub Issues, and we labeled some of
 them as extra suitable for newcomers. [GitHub Issues labeled "Entry Level"](https://github.com/pulls?q=is%3Aopen+user%3Azetkin+label%3Aentry-level+).
+
+Do not be discouraged if the text makes you feel like you have no idea what is
+going on, these Issues are designed to be introduced by someone close to the
+project.
 
 ## Links and resources
 
-- [http://developer.zetkin.org/](http://developer.zetkin.org/)
+- [https://manual.zetkin.org/sv/for-utvecklare/](https://manual.zetkin.org/sv/for-utvecklare/)
