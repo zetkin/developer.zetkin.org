@@ -58,10 +58,13 @@ Zetkin has three large projects you can access on [the Zetkin GitHub Organizatio
 ## Find a task!
 
 Zetkin has many already-described tasks to go work on, in GitHub Issues, and we labeled some of
-them as extra suitable for newcomers. [GitHub Issues labeled "Entry Level"](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3Azetkin+label%3Aentry-level).
+them as extra suitable for newcomers. [GitHub Issues labeled "Entry Level"](https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3Azetkin+label%3Aentry-level+no%3Aassignee).
 
 Don't be discouraged if the text makes you feel like you have no idea what is
 going on, these Issues are designed to be introduced by a Zetkin maintainer. Find someone who can explain.
+
+Also, when you find one that you like, tell the others (e.g. in the Slack
+  channel), so that you can get "assigned" to that Issue.
 
 ## Links and resources
 
