@@ -3,12 +3,7 @@ title: Contributing
 layout: default
 ---
 
-Text för nya, att lägga på https://developer.zetkin.org/contributing/
-Git repo: https://github.com/zetkin/developer.zetkin.org
-
-# Develop Zetkin, together
-
-Zetkin is a big collaboration. This guide is for your very first hour of
+Zetkin is a big collaboration. This guide is for **your very first hour** of
 learning about it. Welcome!
 
 ## Getting started
@@ -19,13 +14,25 @@ Frontend development in CSS, HTML and JavaScript (React)? You can start right aw
 
 Backend development in Python or Node.js? We do this, but you need to get in touch with the Zetkin maintainers to start doing that.
 
+### Get a code collaboration account at GitHub
+
 Zetkin projects use [GitHub Pull Requests](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) for collaboration. You will need [a personal GitHub account](https://github.com/join).
+
+### Install Docker
 
 To develop Zetkin, you need to **get a development environment started**. There
 are instructions about this in different project READMEs. All of them use
 [Docker](https://www.docker.com/), so begin by installing [Docker Desktop](https://www.docker.com/get-started) for your computer platform.
 
-### Open projects
+#### Platform installation snags
+
+Windows! To run Docker on Windows, you _may_ need to check which version of
+Windows you are running.
+
+If your Windows version is Windows Home, there is an installable piece of
+software to support Docker. [Docker documentation: Install Docker Desktop on Windows Home](https://docs.docker.com/docker-for-windows/install-windows-home/)
+
+### Clone a project
 
 Zetkin has three large projects you can access right now:
 
