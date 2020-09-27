@@ -5,13 +5,13 @@ layout: default
 
 ## Setting up the development environment on Windows
 
-This requires Windows 10, 2004 (2020 May Update) or later.
+[This requires Windows 10, 2004 (2020 May Update) or later.](https://support.microsoft.com/en-us/help/4028685/windows-10-get-the-update)
 
 First we need to install the Windows Subsystem for Linux, Visual Studio Code and Docker. Then we will install and configure some software for the WSL2 distribution (Git). There may also be some suggestions on how to make things prettier.
 
 ### Visual Studio Code
 
-[VS Code](https://code.visualstudio.com/) is recommended for the ease of integration with WSL2. It should "just work" once the rest of the parts are in place.
+[VS Code](https://code.visualstudio.com/) is recommended text editor because of ease of integration with WSL2. It should "just work" once the rest of the parts are in place. But the development will also work with any text editor that can either remote to a VM (WSL2 in this case) or work within the WSL2 distribution (Emacs or Vim are likely candidates).
 
 ## WSL2 and Docker
 
@@ -31,7 +31,7 @@ Update the installed distribution by opening the Ubuntu terminal, entering the c
 
 You should now be able to start developing by cloning the git repo, entering it and running the command `code .` to open that directory from the VS Code installed under Windows. The first time this is done a connecting software will be installed so that VS Code can speak to the WSL2 system.
 
-Happy coding!
+[Happy coding!](/contributing)
 
 ## Making things pretty
 
