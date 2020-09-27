@@ -29,23 +29,14 @@ Zetkin projects use [GitHub Pull Requests](https://docs.github.com/en/github/col
 Ask your Zetkin maintainer for an invite to the Zetkin Slack channels, where you
 can get help from other people.
 
-## Install Docker
+## Install dependencies
 
 To develop Zetkin, you need to **get a development environment started**. There
 are instructions about this in different project READMEs.
 
-All of them use
-[Docker](https://www.docker.com/), so begin by installing [Docker Desktop](https://www.docker.com/get-started) for your computer platform.
+All of them use [Docker](https://www.docker.com/), so you will need to install [Docker Desktop](https://www.docker.com/get-started) for your computer platform.
 
-### Platform installation snags
-
-Windows! To run Docker on Windows, you _may_ need to check which version of
-Windows you are running.
-
-If your Windows version is Windows Home, there is an installable piece of
-software to support Docker. [Docker documentation: Install Docker Desktop on Windows Home](https://docs.docker.com/docker-for-windows/install-windows-home/)
-
-Please ask for help from hackathon participants!
+If you are using Windows a few more steps might be necessary. See the separate [contributor's guide for Windows users](/contributing/windows).
 
 ## Clone a project
 
