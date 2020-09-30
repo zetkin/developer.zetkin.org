@@ -607,6 +607,59 @@
     method: GET
   name: InviteItem
   url: /orgs/{org_id}/invites/{invite_id}
+- doc: '
+
+    Join forms are a way of setting up a channel through which people can join the
+
+    organization without first creating a Zetkin user. This is useful to do things
+
+    like creating a form on your website and submitting the data straight into Zetkin.
+
+
+    The form is configured to accept certain fields, and a set of tags that will be
+
+    attached to any person created through the form.
+
+
+    Since forms can be submitted anonymously (without authenticating with the API),
+
+    submissions require a token which is unique per form.
+
+    '
+  docsection: organizations
+  methods:
+  - doc: '
+
+      Get list of join forms. Each join form is it''s own configuration of accepted
+
+      fields and tags that will be assigned when a submission is accepted.
+
+      '
+    method: GET
+  - doc: "\nCreate a new join form. Data should be:\n\n```json\n{\n  \"title\": \"My new form\",\n  \"description\": \"An optional description\",\n  \"renderable\": true,\n  \"embeddable\": true,\n  \"fields\": [\"first_name\", \"last_name\", \"some_custom_field\"],\n  \"tags\": [1, 2]\n}\n```\n\nThe fields array can contain regular person fields and/or the slugs of custom\nperson fields.\n\nThe tags array defines a list of IDs for tags which will be assigned to the\nperson object created when a submission is accepted.\n"
+    method: POST
+  name: JoinFormCollection
+  url: /orgs/{org_id}/join_forms
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: JoinFormItem
+  url: /orgs/{org_id}/join_forms/{form_id}
+- doc: null
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  - doc: "\nSubmit a join form and create a submission which will then need to be accepted\nby an official using `PATCH` on the submission item.\n\nThe data must contain the `submit_token` of the form, and a `form_data` object\ncontaining the fields that the form has been configured to accept.\n\n```json\n{\n  \"submit_token\": \"abc123def456\",\n  \"form_data\": {\n    \"first_name\": \"Clara\",\n    \"last_name\": \"Zetkin\",\n  }\n}\n```\n"
+    method: POST
+  name: JoinFormSubmissionCollection
+  url: /orgs/{org_id}/join_forms/{form_id}/submissions
 - doc: null
   docsection: organizations
   methods:
@@ -616,6 +669,40 @@
     method: POST
   name: JoinRequestCollection
   url: /orgs/{org_id}/join_requests
+- doc: '
+
+    Collection of all join form submissions.
+
+    '
+  docsection: organizations
+  methods:
+  - doc: null
+    method: GET
+  name: JoinSubmissionCollection
+  url: /orgs/{org_id}/join_submissions
+- doc: '
+
+    Single join form submission.
+
+    '
+  docsection: organizations
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: '
+
+      Allows the `state` of a submission to be changed from `"pending"` to `"accepted"`,
+
+      which will create a person in the organization from the submitted data, and assign
+
+      the tags configured on the join form.
+
+      '
+    method: PATCH
+  name: JoinSubmissionItem
+  url: /orgs/{org_id}/join_submissions/{sub_id}
 - doc: null
   docsection: maps
   methods:
@@ -858,6 +945,33 @@
     method: PUT
   name: PersonFieldValueItem
   url: /orgs/{org_id}/people/{person_id}/fields/{field_id}
+- doc: null
+  docsection: people
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonItem
+  url: /orgs/{org_id}/people/{person_id}
+- doc: null
+  docsection: people
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: PersonNoteCollection
+  url: /orgs/{org_id}/people/{person_id}/notes
+- doc: null
+  docsection: people
+  methods:
+  - doc: null
+    method: DELETE
+  name: PersonNoteItem
+  url: /orgs/{org_id}/people/{person_id}/notes/{note_id}
 - doc: null
   docsection: people
   methods:
