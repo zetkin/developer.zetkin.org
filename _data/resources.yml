@@ -636,7 +636,7 @@
 
       '
     method: GET
-  - doc: "\nCreate a new join form. Data should be:\n\n```json\n{\n  \"title\": \"My new form\",\n  \"description\": \"An optional description\",\n  \"renderable\": true,\n  \"embeddable\": true,\n  \"fields\": [\"first_name\", \"last_name\", \"some_custom_field\"],\n  \"tags\": [1, 2]\n}\n```\n\nThe fields array can contain regular person fields and/or the slugs of custom\nperson fields.\n\nThe tags array defines a list of IDs for tags which will be assigned to the\nperson object created when a submission is accepted.\n"
+  - doc: null
     method: POST
   name: JoinFormCollection
   url: /orgs/{org_id}/join_forms
@@ -1008,11 +1008,7 @@
 
       '
     method: GET
-  - doc: '
-
-      Creates a new custom field, for which values can then be set per person.
-
-      '
+  - doc: null
     method: POST
   name: PersonFieldCollection
   url: /orgs/{org_id}/people/fields
@@ -1023,13 +1019,7 @@
     '
   docsection: people
   methods:
-  - doc: '
-
-      Delete a custom field. This will also make inaccessible all values
-
-      assigned to this field on Person objects.
-
-      '
+  - doc: null
     method: DELETE
   - doc: '
 
@@ -1037,11 +1027,7 @@
 
       '
     method: GET
-  - doc: '
-
-      Update field configuration.
-
-      '
+  - doc: null
     method: PATCH
   name: PersonFieldItem
   url: /orgs/{org_id}/people/fields/{field_id}
@@ -1210,6 +1196,118 @@
     method: GET
   name: PersonTagPersonCollection
   url: /orgs/{org_id}/people/tags/{tag_id}/people
+- doc: '
+
+    Collection of Views belonging to this organization. A view can have
+
+    any number of columns and rows.
+
+    '
+  docsection: views
+  methods:
+  - doc: null
+    method: GET
+  - doc: null
+    method: POST
+  name: PersonViewCollection
+  url: /orgs/{org_id}/people/views
+- doc: '
+
+    Single view item.
+
+    '
+  docsection: views
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: null
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonViewItem
+  url: /orgs/{org_id}/people/views/{view_id}
+- doc: '
+
+    Collection of columns in the view identified by `view_id`.
+
+    '
+  docsection: views
+  methods:
+  - doc: '
+
+      Retrieve all columns in view `view_id`
+
+      '
+    method: GET
+  - doc: null
+    method: POST
+  name: PersonViewColumnCollection
+  url: /orgs/{org_id}/people/views/{view_id}/columns
+- doc: '
+
+    Single column identified by `col_id`, belonging to the view identified
+
+    by `view_id`.
+
+    '
+  docsection: views
+  methods:
+  - doc: null
+    method: DELETE
+  - doc: '
+
+      Get column details.
+
+      '
+    method: GET
+  - doc: null
+    method: PATCH
+  name: PersonViewColumnItem
+  url: /orgs/{org_id}/people/views/{view_id}/columns/{col_id}
+- doc: '
+
+    Collection of rows that belong to the view. Data retrieved from this endpoint
+
+    will be formatted according to the view.
+
+    '
+  docsection: views
+  methods:
+  - doc: "\nRetrieves list of people that have been added to the view, formatted according\nto the configuration of the view, i.e. using the columns of the view.\n\nThe data returned will be formatted like this:\n\n```json\n[\n    { \"id\": 1, \"content\": [ \"Alice\", \"Andersson\", \"alice@example.com\", true ] },\n    { \"id\": 2, \"content\": [ \"Bob\", \"Boblaw\", \"bob@example.com\", false ] }\n]\n```\n\nWhere `id` is the ID of the person, and `content` contains the column-by-column\nvalues corresponding to that person. The order and type of the entries in the\n`content` array depends on the view column configuration.\n"
+    method: GET
+  name: PersonViewRowCollection
+  url: /orgs/{org_id}/people/views/{view_id}/rows
+- doc: '
+
+    A single row (person) in a view.
+
+    '
+  docsection: views
+  methods:
+  - doc: '
+
+      Delete a row (person identified by `person_id`) from the view. No actual
+
+      data is lost, regardless of column type.
+
+      '
+    method: DELETE
+  - doc: '
+
+      Get single person from the view, formatted according to view configuration.
+
+      '
+    method: GET
+  - doc: '
+
+      Add a row (person identified by `person_id`) to the view and return the
+
+      data for that person, formatted according to the view configuration.
+
+      '
+    method: PUT
+  name: PersonViewRowItem
+  url: /orgs/{org_id}/people/views/{view_id}/rows/{person_id}
 - doc: '
 
     Search for data globally (access limited).
