@@ -23,6 +23,8 @@
           path: /reference/api/organizations
         - text: Managing people
           path: /reference/api/people
+        - text: Person views
+          path: /reference/api/views
         - text: Searching
           path: /reference/api/search
         - text: Surveys
